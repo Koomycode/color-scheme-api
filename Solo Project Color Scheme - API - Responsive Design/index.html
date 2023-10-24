@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chameleon</title>
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body class="flex">
+
+    <div class="app flex" id="app">
+
+        <header class="header flex">
+            <nav class="navbar flex">
+                <img src="Chameleon_logo.png" class="logo">
+                <h1 class="title"> Chameleon </h1>
+                <p class="sub-title">
+                    Get creative, it's ok to show your true colors
+                </p>
+            </nav>
+
+            <form class="form flex" id="form">
+                <h1 class="form-title">Get started</h1>
+
+                <label for="color-input">Pick a color</label>
+                <input type="color" name="color" id="color-input" class="color-input">
+
+                <label for="select">Pick a mode</label>
+                <select name="select" id="select" class="select">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+
+                <button type="submit" class="form-btn" id="form-btn">
+                    Get color scheme
+                </button>
+            </form>
+        </header>
+
+        <main class="main">
+            <div class="colors" id="colors">
+                <!-- Render in JS 5 times-->
+                <!--  
+                <div class="color">
+                    <div class="color-display">
+                        <h4 class="color-name">#000000</h4>
+                    </div>
+                </div>
+                -->
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/53af5e9bb6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
